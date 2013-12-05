@@ -1,0 +1,5 @@
+Duplicate native: require('fs').ReadStream.super_.prototype.on vs process.EventEmitter.prototype.addListener
+Duplicate native: require('fs').SyncWriteStream.super_ vs require('fs').ReadStream.super_
+Duplicate native: require('fs').SyncWriteStream.super_.prototype.pipe vs require('fs').ReadStream.super_.prototype.pipe
+Duplicate native: require('fs').WriteStream.super_ vs require('fs').ReadStream.super_
+Duplicate native: require('fs').WriteStream.super_.prototype.pipe vs require('fs').ReadStream.super_.prototype.pipe
