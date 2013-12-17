@@ -1,0 +1,17 @@
+ace.KeyBinding: expected {new(editor:ace.Editor) => ace.KeyBinding} but found nothing
+ace.Anchor: expected {new(doc:ace.Document, row:number, column:number) => ace.Anchor} but found nothing
+ace.BackgroundTokenizer: expected {new(tokenizer:ace.Tokenizer, editor:ace.Editor) => ace.BackgroundTokenizer} but found nothing
+ace.Document: expected {new(text?:string) => ace.Document, new(text?:Array<string>) => ace.Document} but found nothing
+ace.Editor: expected {new(renderer:ace.VirtualRenderer, session?:ace.IEditSession) => ace.Editor} but found nothing
+ace.PlaceHolder: expected {new(session:ace.Document, length:number, pos:number, others:string, mainClass:string, othersClass:string) => ace.PlaceHolder, new(session:ace.IEditSession, length:number, pos:ace.Position, positions:Array<ace.Position>) => ace.PlaceHolder} but found nothing
+ace.RangeList: expected {new() => ace.IRangeList} but found nothing
+ace.Range: expected {fromPoints: {(pos1:ace.Position, pos2:ace.Position) => ace.Range}, new(startRow:number, startColumn:number, endRow:number, endColumn:number) => ace.Range} but found nothing
+ace.RenderLoop: expected {new() => ace.RenderLoop} but found nothing
+ace.ScrollBar: expected {new(parent:HTMLElement) => ace.ScrollBar} but found nothing
+ace.Search: expected {new() => ace.Search} but found nothing
+ace.Selection: expected {new(session:ace.IEditSession) => ace.Selection} but found nothing
+ace.Split: expected {new() => ace.Split} but found nothing
+ace.TokenIterator: expected {new(session:ace.IEditSession, initialRow:number, initialColumn:number) => ace.TokenIterator} but found nothing
+ace.Tokenizer: expected {new(rules:any, flag:string) => ace.Tokenizer} but found nothing
+ace.VirtualRenderer: expected {new(container:HTMLElement, theme?:string) => ace.VirtualRenderer} but found nothing
+Suggestion: ace::config could be added to interface 
