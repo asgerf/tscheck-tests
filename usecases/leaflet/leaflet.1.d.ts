@@ -722,13 +722,6 @@ declare module L {
 }
  
 declare module L {
-
-    /**
-      * Creates a Draggable object for moving the given element when you start dragging
-      * the dragHandle element (equals the element itself by default).
-      */
-    function draggable(element: HTMLElement, dragHandle?: HTMLElement): Draggable;
-
     export class Draggable extends Class implements IEventPowered<Draggable> {
 
         /**
@@ -917,7 +910,7 @@ declare module L {
           * used in GeoJSON for points. If reverse is set to true, the numbers will be interpreted
           * as (longitude, latitude).
           */
-        static coordsToLatlng(coords: number[], reverse?: boolean): LatLng;
+        static coordsToLatLng(coords: number[], reverse?: boolean): LatLng;
     
         /**
           * Creates a multidimensional array of LatLng objects from a GeoJSON coordinates
@@ -925,7 +918,7 @@ declare module L {
           * 1 for an array of arrays of points, etc., 0 by default). If reverse is set to
           * true, the numbers will be interpreted as (longitude, latitude).
           */
-        static coordsToLatlngs(coords: number[], levelsDeep?: number, reverse?: boolean): LatLng[];
+        static coordsToLatLngs(coords: number[], levelsDeep?: number, reverse?: boolean): LatLng[];
     
     }
 }
@@ -1103,7 +1096,7 @@ declare module L {
         /**
           * Standard code name of the CRS passed into WMS services (e.g. 'EPSG:3857').
           */
-        code: string;
+        code?: string;
     
         /**
           * Projects geographical coordinates on a given zoom into pixel coordinates.
@@ -3655,24 +3648,23 @@ declare module L {
         }
     }
 
-    export class tileLayer {
-        
-        /**
-          * Instantiates a tile layer object given a URL template and optionally an options
-          * object.
-          */
-        function (urlTemplate: string, options?: TileLayerOptions): TileLayer;
+    /**
+      * Instantiates a tile layer object given a URL template and optionally an options
+      * object.
+      */
+    function tileLayer(urlTemplate: string, options?: TileLayerOptions): TileLayer;
 
+    module tileLayer {
         /**
           * Instantiates a WMS tile layer object given a base URL of the WMS service and
           * a WMS parameters/options object.
           */
-        static wms(baseUrl: string, options: WMSOptions): L.TileLayer.WMS;
+        function wms(baseUrl: string, options: WMSOptions): L.TileLayer.WMS;
 
         /**
           * Instantiates a Canvas tile layer object given an options object (optionally).
           */
-        static canvas(options?: TileLayerOptions): L.TileLayer.Canvas;
+        function canvas(options?: TileLayerOptions): L.TileLayer.Canvas;
     }
 }
  
