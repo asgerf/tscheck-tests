@@ -1,0 +1,10 @@
+d3.layout.hierarchy().nodes: expected {(root:D3.Layout.GraphNode) => D3.Layout.GraphNode[]} but found nothing
+d3.geom.quadtree().add(D3.Geom.Point): expected D3.Geom.Quadtree but found nothing
+d3.geom.quadtree().visit(any): expected D3.Geom.Quadtree but found nothing
+d3.geom.polygon(D3.Geom.Vertice[]).area: expected {() => number} but found nothing
+d3.transition().duration: expected {(duration:number) => D3.Transition.Transition, (duration:{(data:any, index:number) => any}) => D3.Transition.Transition} but found nothing
+d3.select(string).attr: expected {(name:string) => string, (name:string, value:any) => D3.Selection, (name:string, valueFunction:{(data:any, index:number) => any}) => D3.Selection, (attrValueMap:any) => D3.Selection} but found nothing
+d3.select(EventTarget).attr: expected {(name:string) => string, (name:string, value:any) => D3.Selection, (name:string, valueFunction:{(data:any, index:number) => any}) => D3.Selection, (attrValueMap:any) => D3.Selection} but found nothing
+d3.selectAll(string).attr: expected {(name:string) => string, (name:string, value:any) => D3.Selection, (name:string, valueFunction:{(data:any, index:number) => any}) => D3.Selection, (attrValueMap:any) => D3.Selection} but found nothing
+d3.selectAll(EventTarget[]).attr: expected {(name:string) => string, (name:string, value:any) => D3.Selection, (name:string, valueFunction:{(data:any, index:number) => any}) => D3.Selection, (attrValueMap:any) => D3.Selection} but found nothing
+D3: expected module:D3 but found nothing
